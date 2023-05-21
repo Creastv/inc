@@ -18,21 +18,19 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-         <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route path="/" element={<Login />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="*" element={<NoPage />} />
         </Route>
         <Route path="/admin/" element={<LayoutAdmin />}>
           <Route path="/admin/" element={<Dashboard />} />
-          <Route path="/admin/incomings" element={ <Incomings />} />
-          <Route path="/admin/spendings" element={ <Spendings />} />
-
-          <Route path="/admin/products" element={ <Products />} />
-          <Route path="/admin/customers" element={ <Customers />} />
-          <Route path="/admin/providers" element={ <Providers />} />
+          <Route path="/admin/incomings" element={<Incomings />} />
+          <Route path="/admin/spendings" element={<Spendings />} />
+          <Route path="/admin/products" element={<Products />} />
+          <Route path="/admin/customers" element={<Customers />} />
+          <Route path="/admin/providers" element={<Providers />} />
         </Route>
-       
       </Routes>
     </BrowserRouter>
   );
