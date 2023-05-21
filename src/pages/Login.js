@@ -1,5 +1,11 @@
 import Title from "../components/Title";
+
+
 function Login() {
-  return <Title>Login</Title>;
+  return (
+    <div>
+    <Title>Login</Title>
+    </div>
+    );
 }
 export default Login;
