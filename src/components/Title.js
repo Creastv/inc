@@ -1,7 +1,11 @@
+import Typography from "@mui/material/Typography";
+
 function Title({ children }) {
   return (
     <div>
-      <h1>{children}</h1>
+      <Typography color="black" variant="h1">
+        {children}
+      </Typography>
     </div>
   );
 }

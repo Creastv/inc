@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { ThemeProvider } from "@mui/material/styles";
+import style from "./providers/style";
 import LayoutAdmin from "./pages/LayoutAdmin";
 import Dashboard from "./pages/Dashboard";
 import Incomings from "./pages/incomings/Incomings";
@@ -7,11 +8,9 @@ import Spendings from "./pages/spendings/Spendings";
 import Products from "./pages/products/Products";
 import Customers from "./pages/customers/Customers";
 import Providers from "./pages/providers/Providers";
-
 import Layout from "./pages/Layout";
 import Login from "./pages/Login";
 import Registration from "./pages/Registration";
-
 import NoPage from "./pages/NoPage";
 
 export default function App() {
