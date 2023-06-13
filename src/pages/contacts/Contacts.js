@@ -1,9 +1,9 @@
 import Typography from "@mui/material/Typography";
-function Profile() {
+function Customers() {
   return (
     <Typography color="black" variant="h1">
-      Profile
+      Customers
     </Typography>
   );
 }
-export default Profile;
+export default Customers;

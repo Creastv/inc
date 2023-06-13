@@ -1,5 +1,9 @@
-import Title from "../../components/Title";
+import Typography from "@mui/material/Typography";
 function Spendings() {
-  return <Title>Spendings</Title>;
+  return (
+    <Typography color="black" variant="h1">
+      Spendings
+    </Typography>
+  );
 }
 export default Spendings;

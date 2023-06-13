@@ -1,5 +1,10 @@
-import Title from "../components/Title";
+import { Navigate } from "react-router-dom";
+
 function NoPage() {
-  return <Title>NoPage</Title>;
+  if (1 == 1) {
+    return <Navigate replace to="/dashboard" />;
+  } else {
+    return <Navigate replace to="/sing/in" />;
+  }
 }
 export default NoPage;

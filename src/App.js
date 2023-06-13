@@ -1,16 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ThemeProvider } from "@mui/material/styles";
-import style from "./providers/style";
 import LayoutAdmin from "./pages/LayoutAdmin";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/dashboard/Dashboard";
 import Incomings from "./pages/incomings/Incomings";
 import Spendings from "./pages/spendings/Spendings";
-import Products from "./pages/products/Products";
-import Customers from "./pages/customers/Customers";
-import Providers from "./pages/providers/Providers";
+import Contacts from "./pages/contacts/Contacts";
 import Layout from "./pages/Layout";
-import Login from "./pages/Login";
-import Registration from "./pages/Registration";
+import Login from "./pages/sing/Login";
+import Registration from "./pages/sing/Registration";
 import NoPage from "./pages/NoPage";
 
 export default function App() {
@@ -18,17 +14,15 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Login />} />
-          <Route path="/registration" element={<Registration />} />
+          <Route path="/sing/in" element={<Login />} />
+          <Route path="/sing/up" element={<Registration />} />
           <Route path="*" element={<NoPage />} />
         </Route>
-        <Route path="/admin/" element={<LayoutAdmin />}>
-          <Route path="/admin/" element={<Dashboard />} />
-          <Route path="/admin/incomings" element={<Incomings />} />
-          <Route path="/admin/spendings" element={<Spendings />} />
-          <Route path="/admin/products" element={<Products />} />
-          <Route path="/admin/customers" element={<Customers />} />
-          <Route path="/admin/providers" element={<Providers />} />
+        <Route path="/" element={<LayoutAdmin />}>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/incomings" element={<Incomings />} />
+          <Route path="/spendings" element={<Spendings />} />
+          <Route path="/contacts" element={<Contacts />} />
         </Route>
       </Routes>
     </BrowserRouter>

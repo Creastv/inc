@@ -1,7 +1,10 @@
-import { Outlet } from "react-router-dom";
-
+import { Outlet, Navigate } from "react-router-dom";
 const Layout = () => {
-  return <Outlet />
+  if (1 == 1) {
+    return <Navigate replace to="/dashboard" />;
+  } else {
+    return <Outlet />;
+  }
 };
 
 export default Layout;

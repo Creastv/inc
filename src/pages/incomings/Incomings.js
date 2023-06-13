@@ -1,5 +1,9 @@
-// import h1 from "../components/h1";
+import Typography from "@mui/material/Typography";
 function Incomings() {
-  return <h1>Incomings</h1>;
+  return (
+    <Typography color="black" variant="h1">
+      Incomings
+    </Typography>
+  );
 }
 export default Incomings;

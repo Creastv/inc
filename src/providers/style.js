@@ -22,6 +22,7 @@ const style = createTheme({
       fontWeight: 800
     },
     h2: {
+      fontSize: 31,
       fontWeight: 800
     },
     h3: {
